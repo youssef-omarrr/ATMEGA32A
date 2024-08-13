@@ -1,0 +1,781 @@
+Archive member included to satisfy reference by file (symbol)
+
+e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                              build/default/production/mLCD.o (__divmodhi4)
+e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              build/default/production/main.o (__do_copy_data)
+e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
+e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                              E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o (exit)
+e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+                              e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o) (_Exit)
+e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o) (_exit)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ .bss           0x0000000000000000        0x0 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ .text          0x0000000000000000        0x0 build/default/production/DIO.o
+ .data          0x0000000000000000        0x0 build/default/production/DIO.o
+ .bss           0x0000000000000000        0x0 build/default/production/DIO.o
+ .text.setPINA_dir
+                0x0000000000000000       0x44 build/default/production/DIO.o
+ .text.setPINB_dir
+                0x0000000000000000       0x44 build/default/production/DIO.o
+ .text.setPINC_dir
+                0x0000000000000000       0x44 build/default/production/DIO.o
+ .text.setPINA  0x0000000000000000       0x60 build/default/production/DIO.o
+ .text.setPINB  0x0000000000000000       0x60 build/default/production/DIO.o
+ .text.setPINC  0x0000000000000000       0x60 build/default/production/DIO.o
+ .text.setPORTA_dir
+                0x0000000000000000       0x14 build/default/production/DIO.o
+ .text.setPORTB_dir
+                0x0000000000000000       0x14 build/default/production/DIO.o
+ .text.setPORTC_dir
+                0x0000000000000000       0x14 build/default/production/DIO.o
+ .text.setPORTD_dir
+                0x0000000000000000       0x14 build/default/production/DIO.o
+ .text.setPORTA_dir_val
+                0x0000000000000000       0x20 build/default/production/DIO.o
+ .text.setPORTB_dir_val
+                0x0000000000000000       0x20 build/default/production/DIO.o
+ .text.setPORTD_dir_val
+                0x0000000000000000       0x20 build/default/production/DIO.o
+ .text.readPINA
+                0x0000000000000000       0x18 build/default/production/DIO.o
+ .text.readPINB
+                0x0000000000000000       0x18 build/default/production/DIO.o
+ .text.readPINC
+                0x0000000000000000       0x18 build/default/production/DIO.o
+ .text.readPIND
+                0x0000000000000000       0x18 build/default/production/DIO.o
+ .text.readPORTA
+                0x0000000000000000        0x4 build/default/production/DIO.o
+ .text.readPORTB
+                0x0000000000000000        0x4 build/default/production/DIO.o
+ .text.readPORTC
+                0x0000000000000000        0x4 build/default/production/DIO.o
+ .text.readPORTD
+                0x0000000000000000        0x4 build/default/production/DIO.o
+ .text          0x0000000000000000        0x0 build/default/production/LEDs.o
+ .data          0x0000000000000000        0x0 build/default/production/LEDs.o
+ .bss           0x0000000000000000        0x0 build/default/production/LEDs.o
+ .text.initLED  0x0000000000000000       0x26 build/default/production/LEDs.o
+ .text.LED_on   0x0000000000000000       0x3a build/default/production/LEDs.o
+ .text.LED_off  0x0000000000000000       0x3a build/default/production/LEDs.o
+ .text.LED_toggle
+                0x0000000000000000       0x3a build/default/production/LEDs.o
+ .debug_info    0x0000000000000000      0x456 build/default/production/LEDs.o
+ .debug_abbrev  0x0000000000000000       0xaa build/default/production/LEDs.o
+ .debug_loc     0x0000000000000000      0x126 build/default/production/LEDs.o
+ .debug_aranges
+                0x0000000000000000       0x38 build/default/production/LEDs.o
+ .debug_ranges  0x0000000000000000       0x28 build/default/production/LEDs.o
+ .debug_line    0x0000000000000000       0xe9 build/default/production/LEDs.o
+ .debug_str     0x0000000000000000       0x18 build/default/production/LEDs.o
+ .comment       0x0000000000000000       0x30 build/default/production/LEDs.o
+ .debug_frame   0x0000000000000000       0x54 build/default/production/LEDs.o
+ .text          0x0000000000000000        0x0 build/default/production/buttons.o
+ .data          0x0000000000000000        0x0 build/default/production/buttons.o
+ .bss           0x0000000000000000        0x0 build/default/production/buttons.o
+ .text.initBUTTON
+                0x0000000000000000       0x26 build/default/production/buttons.o
+ .text.isPressedA
+                0x0000000000000000        0x8 build/default/production/buttons.o
+ .text.isPressedB
+                0x0000000000000000        0x8 build/default/production/buttons.o
+ .text.isPressedC
+                0x0000000000000000        0x8 build/default/production/buttons.o
+ .text.isPressedD
+                0x0000000000000000        0x8 build/default/production/buttons.o
+ .text.isPressed
+                0x0000000000000000       0x58 build/default/production/buttons.o
+ .debug_info    0x0000000000000000      0x428 build/default/production/buttons.o
+ .debug_abbrev  0x0000000000000000       0xa5 build/default/production/buttons.o
+ .debug_loc     0x0000000000000000      0x104 build/default/production/buttons.o
+ .debug_aranges
+                0x0000000000000000       0x48 build/default/production/buttons.o
+ .debug_ranges  0x0000000000000000       0x38 build/default/production/buttons.o
+ .debug_line    0x0000000000000000      0x106 build/default/production/buttons.o
+ .debug_str     0x0000000000000000       0x43 build/default/production/buttons.o
+ .comment       0x0000000000000000       0x30 build/default/production/buttons.o
+ .debug_frame   0x0000000000000000       0x74 build/default/production/buttons.o
+ .text          0x0000000000000000        0x0 build/default/production/keypad.o
+ .data          0x0000000000000000        0x0 build/default/production/keypad.o
+ .bss           0x0000000000000000        0x0 build/default/production/keypad.o
+ .text.initKEYPAD
+                0x0000000000000000        0xc build/default/production/keypad.o
+ .text.readkey  0x0000000000000000        0x4 build/default/production/keypad.o
+ .debug_info    0x0000000000000000      0x236 build/default/production/keypad.o
+ .debug_abbrev  0x0000000000000000       0x5c build/default/production/keypad.o
+ .debug_aranges
+                0x0000000000000000       0x28 build/default/production/keypad.o
+ .debug_ranges  0x0000000000000000       0x18 build/default/production/keypad.o
+ .debug_line    0x0000000000000000       0x8a build/default/production/keypad.o
+ .debug_str     0x0000000000000000        0x0 build/default/production/keypad.o
+ .comment       0x0000000000000000       0x30 build/default/production/keypad.o
+ .debug_frame   0x0000000000000000       0x34 build/default/production/keypad.o
+ .text          0x0000000000000000        0x0 build/default/production/mLCD.o
+ .data          0x0000000000000000        0x0 build/default/production/mLCD.o
+ .bss           0x0000000000000000        0x0 build/default/production/mLCD.o
+ .text.LCD_en   0x0000000000000000       0x12 build/default/production/mLCD.o
+ .text.LCD_cmd  0x0000000000000000       0x1c build/default/production/mLCD.o
+ .text.LCD_data
+                0x0000000000000000       0x1c build/default/production/mLCD.o
+ .text.LCD_data_str
+                0x0000000000000000       0x1e build/default/production/mLCD.o
+ .text.LCD_data_num
+                0x0000000000000000       0xee build/default/production/mLCD.o
+ .text.LCD_CLEAR
+                0x0000000000000000       0x18 build/default/production/mLCD.o
+ .text.initLCD  0x0000000000000000       0x56 build/default/production/mLCD.o
+ .debug_info    0x0000000000000000      0x701 build/default/production/mLCD.o
+ .debug_abbrev  0x0000000000000000      0x17f build/default/production/mLCD.o
+ .debug_loc     0x0000000000000000      0x366 build/default/production/mLCD.o
+ .debug_aranges
+                0x0000000000000000       0x50 build/default/production/mLCD.o
+ .debug_ranges  0x0000000000000000       0x40 build/default/production/mLCD.o
+ .debug_line    0x0000000000000000      0x21c build/default/production/mLCD.o
+ .debug_str     0x0000000000000000       0x19 build/default/production/mLCD.o
+ .comment       0x0000000000000000       0x30 build/default/production/mLCD.o
+ .debug_frame   0x0000000000000000       0xc8 build/default/production/mLCD.o
+ .text          0x0000000000000000        0x0 build/default/production/main.o
+ .data          0x0000000000000000        0x0 build/default/production/main.o
+ .bss           0x0000000000000000        0x0 build/default/production/main.o
+ .text          0x0000000000000000        0x0 build/default/production/outdev.o
+ .data          0x0000000000000000        0x0 build/default/production/outdev.o
+ .bss           0x0000000000000000        0x0 build/default/production/outdev.o
+ .text.initBUZZER
+                0x0000000000000000        0xe build/default/production/outdev.o
+ .text.initRELAY
+                0x0000000000000000        0xe build/default/production/outdev.o
+ .text.BUZEER_on
+                0x0000000000000000        0xe build/default/production/outdev.o
+ .text.BUZEER_off
+                0x0000000000000000        0xe build/default/production/outdev.o
+ .text.RELAY_on
+                0x0000000000000000        0xe build/default/production/outdev.o
+ .text.RELAY_off
+                0x0000000000000000        0xe build/default/production/outdev.o
+ .debug_info    0x0000000000000000      0x375 build/default/production/outdev.o
+ .debug_abbrev  0x0000000000000000       0x74 build/default/production/outdev.o
+ .debug_aranges
+                0x0000000000000000       0x48 build/default/production/outdev.o
+ .debug_ranges  0x0000000000000000       0x38 build/default/production/outdev.o
+ .debug_line    0x0000000000000000       0xaf build/default/production/outdev.o
+ .debug_str     0x0000000000000000        0xc build/default/production/outdev.o
+ .comment       0x0000000000000000       0x30 build/default/production/outdev.o
+ .debug_frame   0x0000000000000000       0x74 build/default/production/outdev.o
+ .text          0x0000000000000000        0x0 build/default/production/mLCD4.o
+ .data          0x0000000000000000        0x0 build/default/production/mLCD4.o
+ .bss           0x0000000000000000        0x0 build/default/production/mLCD4.o
+ .text.LCD4_move_right
+                0x0000000000000000       0x2c build/default/production/mLCD4.o
+ .text.LCD4_move_left
+                0x0000000000000000       0x2c build/default/production/mLCD4.o
+ .text.LCD4_data_num
+                0x0000000000000000       0xee build/default/production/mLCD4.o
+ .text          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x1a e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+ .data          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+ .bss           0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x73 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+ .text          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+ .data          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+ .bss           0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+ .text          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000008000 xr
+data             0x0000000000800060 0x0000000000000800 rw !x
+eeprom           0x0000000000810000 0x0000000000000400 rw !x
+fuse             0x0000000000820000 0x0000000000000002 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+bootrow          0x0000000000860000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+                0x0000000000000001                __MPLAB_BUILD = 0x1
+LOAD build/default/production/DIO.o
+LOAD build/default/production/LEDs.o
+LOAD build/default/production/buttons.o
+LOAD build/default/production/keypad.o
+LOAD build/default/production/mLCD.o
+LOAD build/default/production/main.o
+LOAD build/default/production/outdev.o
+LOAD build/default/production/mLCD4.o
+START GROUP
+LOAD e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+START GROUP
+LOAD e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5\libatmega32a.a
+END GROUP
+                [0x0000000000000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800060]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x0000000000000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000002]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __BOOTROW_REGION_LENGTH__ = DEFINED (__BOOTROW_REGION_LENGTH__)?__BOOTROW_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000       0xb0
+ *(.vectors)
+ .vectors       0x0000000000000000       0x54 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.dinit)
+ .dinit         0x0000000000000054        0x7 data_init
+                0x000000000000005c                . = ALIGN (0x2)
+ *fill*         0x000000000000005b        0x1 
+                0x000000000000005c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000005c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000005c                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+                0x000000000000005c                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000005c                __ctors_start = .
+ *(.ctors)
+                0x000000000000005c                __ctors_end = .
+                0x000000000000005c                __dtors_start = .
+ *(.dtors)
+                0x000000000000005c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000005c        0x0 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+                0x000000000000005c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000005c        0xc E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000068       0x3c e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000068                __do_copy_data
+                0x0000000000000096                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000a4        0x8 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ *(.init9)
+                0x00000000000000ac                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000000000000ac        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000000000000ac                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000000000000ac        0x4 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000000000000b0                _etext = .
+
+.data           0x0000000000800060        0x0 load address 0x00000000000000b0
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
+                0x0000000000800060                . = ALIGN (0x2)
+                0x0000000000800060                _edata = .
+                [!provide]                        PROVIDE (__data_end, .)
+
+.bss            0x0000000000800060        0x0
+                [!provide]                        PROVIDE (__bss_start, .)
+ *(COMMON)
+                [!provide]                        PROVIDE (__bss_end, .)
+                0x00000000000000b0                __data_load_start = LOADADDR (.data)
+                0x00000000000000b0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800060        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000800060                _end = .
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.bootrow
+ *(.bootrow*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x5b
+ *(.comment)
+ .comment       0x0000000000000000       0x2f build/default/production/DIO.o
+                                         0x30 (size before relaxing)
+ .comment       0x000000000000002f       0x30 build/default/production/main.o
+ .comment       0x000000000000002f       0x30 build/default/production/mLCD4.o
+ .comment       0x000000000000002f       0x2c e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                                         0x2d (size before relaxing)
+ .comment       0x000000000000005b       0x2d e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+
+.stack.descriptors.hdr
+                0x0000000000000000       0x2a
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+ .stack.descriptors.hdr
+                0x000000000000000e        0xe e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+ .stack.descriptors.hdr
+                0x000000000000001c        0xe e:/program files/avr/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x160
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0xd8 build/default/production/DIO.o
+ .debug_aranges
+                0x00000000000000d8       0x20 build/default/production/main.o
+ .debug_aranges
+                0x00000000000000f8       0x68 build/default/production/mLCD4.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x174c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x4e6 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ .debug_info    0x00000000000004e6      0x713 build/default/production/DIO.o
+ .debug_info    0x0000000000000bf9      0x32f build/default/production/main.o
+ .debug_info    0x0000000000000f28      0x824 build/default/production/mLCD4.o
+
+.debug_abbrev   0x0000000000000000      0x80f
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x4a3 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ .debug_abbrev  0x00000000000004a3       0xf0 build/default/production/DIO.o
+ .debug_abbrev  0x0000000000000593       0xfd build/default/production/main.o
+ .debug_abbrev  0x0000000000000690      0x17f build/default/production/mLCD4.o
+
+.debug_line     0x0000000000000000      0x8a5
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x116 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ .debug_line    0x0000000000000116      0x3f9 build/default/production/DIO.o
+ .debug_line    0x000000000000050f       0xcb build/default/production/main.o
+ .debug_line    0x00000000000005da      0x2cb build/default/production/mLCD4.o
+
+.debug_frame    0x0000000000000000      0x2e8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x194 build/default/production/DIO.o
+ .debug_frame   0x0000000000000194       0x24 build/default/production/main.o
+ .debug_frame   0x00000000000001b8      0x130 build/default/production/mLCD4.o
+
+.debug_str      0x0000000000000000      0x1e2
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x196 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+ .debug_str     0x0000000000000196        0xe build/default/production/DIO.o
+ .debug_str     0x00000000000001a4       0x21 build/default/production/main.o
+ .debug_str     0x00000000000001c5       0x1d build/default/production/mLCD4.o
+
+.debug_loc      0x0000000000000000      0xbec
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x770 build/default/production/DIO.o
+ .debug_loc     0x0000000000000770      0x47c build/default/production/mLCD4.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x130
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0xc8 build/default/production/DIO.o
+ .debug_ranges  0x00000000000000c8       0x10 build/default/production/main.o
+ .debug_ranges  0x00000000000000d8       0x58 build/default/production/mLCD4.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(dist/default/production/y_omar2.X.production.elf elf32-avr)
+LOAD linker stubs
+LOAD data_init
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+
+.text.setPIND   0x00000000000000b0       0x60
+ .text.setPIND  0x00000000000000b0       0x60 build/default/production/DIO.o
+                0x00000000000000b0                setPIND
+
+.text.initLCD4  0x0000000000000110       0x5a
+ .text.initLCD4
+                0x0000000000000110       0x5a build/default/production/mLCD4.o
+                0x0000000000000110                initLCD4
+
+.text.setPIND_dir
+                0x000000000000016a       0x44
+ .text.setPIND_dir
+                0x000000000000016a       0x44 build/default/production/DIO.o
+                0x000000000000016a                setPIND_dir
+
+.text.LCD4_cmd  0x00000000000001ae       0x42
+ .text.LCD4_cmd
+                0x00000000000001ae       0x42 build/default/production/mLCD4.o
+                0x00000000000001ae                LCD4_cmd
+
+.text.LCD4_data
+                0x00000000000001f0       0x42
+ .text.LCD4_data
+                0x00000000000001f0       0x42 build/default/production/mLCD4.o
+                0x00000000000001f0                LCD4_data
+
+.text.main      0x0000000000000232       0x2c
+ .text.main     0x0000000000000232       0x2c build/default/production/main.o
+                0x0000000000000232                main
+
+.text.LCD4_CLEAR
+                0x000000000000025e       0x26
+ .text.LCD4_CLEAR
+                0x000000000000025e       0x26 build/default/production/mLCD4.o
+                0x000000000000025e                LCD4_CLEAR
+
+.text.setPORTC_dir_val
+                0x0000000000000284       0x20
+ .text.setPORTC_dir_val
+                0x0000000000000284       0x20 build/default/production/DIO.o
+                0x0000000000000284                setPORTC_dir_val
+
+.text.LCD4_data_str
+                0x00000000000002a4       0x1e
+ .text.LCD4_data_str
+                0x00000000000002a4       0x1e build/default/production/mLCD4.o
+                0x00000000000002a4                LCD4_data_str
+
+.text.LCD4_goto
+                0x00000000000002c2       0x1c
+ .text.LCD4_goto
+                0x00000000000002c2       0x1c build/default/production/mLCD4.o
+                0x00000000000002c2                LCD4_goto
+
+.text.exit      0x00000000000002de       0x16
+ .text.exit     0x00000000000002de       0x16 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x00000000000002de                exit
+
+.text.LCD4_en   0x00000000000002f4       0x12
+ .text.LCD4_en  0x00000000000002f4       0x12 build/default/production/mLCD4.o
+                0x00000000000002f4                LCD4_en
+
+.text           0x0000000000000306        0x4
+ .text          0x0000000000000306        0x4 E:/Program Files/mplabx/packs/Microchip/ATmega_DFP/3.1.264/xc8/avr/lib/avr5/crtatmega32a.o
+                0x0000000000000306                __vector_1
+                0x0000000000000306                __vector_12
+                0x0000000000000306                __bad_interrupt
+                0x0000000000000306                __vector_6
+                0x0000000000000306                __vector_3
+                0x0000000000000306                __vector_11
+                0x0000000000000306                __vector_13
+                0x0000000000000306                __vector_17
+                0x0000000000000306                __vector_19
+                0x0000000000000306                __vector_7
+                0x0000000000000306                __vector_5
+                0x0000000000000306                __vector_4
+                0x0000000000000306                __vector_9
+                0x0000000000000306                __vector_2
+                0x0000000000000306                __vector_15
+                0x0000000000000306                __vector_8
+                0x0000000000000306                __vector_14
+                0x0000000000000306                __vector_10
+                0x0000000000000306                __vector_16
+                0x0000000000000306                __vector_18
+                0x0000000000000306                __vector_20
+
+.text._Exit     0x000000000000030a        0x4
+ .text._Exit    0x000000000000030a        0x4 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(_Exit.o)
+                0x000000000000030a                _Exit
+
+.text.__dummy_fini
+                0x000000000000030e        0x2
+ .text.__dummy_fini
+                0x000000000000030e        0x2 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x000000000000030e                _fini
+
+.text.__dummy_funcs_on_exit
+                0x0000000000000310        0x2
+ .text.__dummy_funcs_on_exit
+                0x0000000000000310        0x2 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x0000000000000310                __funcs_on_exit
+
+.text.__dummy_simulator_exit
+                0x0000000000000312        0x2
+ .text.__dummy_simulator_exit
+                0x0000000000000312        0x2 e:/program files/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(exit.o)
+                0x0000000000000312                __simulator_exit
+
+.rodata         0x0000000000800060        0x6 load address 0x0000000000000314
+ .rodata        0x0000000000800060        0x6 build/default/production/main.o
