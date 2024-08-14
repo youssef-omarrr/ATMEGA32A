@@ -9,14 +9,14 @@
 #ifndef OUTDEV_H
 #define	OUTDEV_H
 
-#define BUZZER PA3
-#define RELAY PA2
+#define BUZZER  PB0
+#define RELAY   PA2
 
 void initBUZZER();
 void initRELAY();
 
-void BUZEER_on();
-void BUZEER_off();
+void BUZZER_on();
+void BUZZER_off();
 void RELAY_on();
 void RELAY_off();
 

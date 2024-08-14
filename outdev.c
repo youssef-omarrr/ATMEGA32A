@@ -3,17 +3,17 @@
 #include "outdev.h"
 
 void initBUZZER(){
-    setPINA_dir(BUZZER, OUT);
+    setPINB_dir(BUZZER, OUT);
 }
 void initRELAY(){
     setPINA_dir(RELAY, OUT);
 }
 
-void BUZEER_on(){
-    setPINA(BUZZER, HIGH);
+void BUZZER_on(){
+    setPINB(BUZZER, HIGH);
 }
-void BUZEER_off(){
-    setPINA(BUZZER, LOW);
+void BUZZER_off(){
+    setPINB(BUZZER, LOW);
 }
 void RELAY_on(){
     setPINA(RELAY, HIGH);
