@@ -12,12 +12,19 @@ void initADC(char ch, char ref, char freq){
     ADC_select_freq(freq);
     
     //enable interrupt if needed
-    //ADC_int_en();
+    ADC_int_en();
+    
+    //auto trigger enable
+    ADC_auto_triggering(TIMER0_TOV);
     
     //enable the ADC peripheral
     ADC_en();
 }
 
+/**
+ * 
+ * @param ch from CH0 to CH7
+ */
 void ADC_select_ch(char ch) {
     ADMUX &= ~((1 << MUX2) | (1 << MUX1) | (1 << MUX0)); //reset bits first before changing the channel
     ADMUX |= ch;
@@ -52,4 +59,36 @@ void ADC_en() { //enable ADC
 
 void ADC_int_en(){ //enable the ADC interrupt
     ADCSRA |= (1 << ADIE);
+}
+
+/**
+ * 
+ * @param mode  EXTERNAL_INTO   
+                TIMER0_TOV      
+                TIMER0_COM      
+                TIMER1_TOV     
+                TIMER1_COMB     
+ */
+void ADC_auto_triggering(char mode){
+    SFIOR &= ~(1<<ADTS2 | 1<<ADTS1 | 1<<ADTS0); //reset first
+    switch (mode){
+        case (EXTERNAL_INTO)://010
+            SFIOR |= (1<<ADTS1);
+            break;
+        case(TIMER0_TOV)://100
+            SFIOR |= (1<<ADTS2);
+            break;
+        case(TIMER0_COM)://011
+            SFIOR |= (1<<ADTS0);
+            SFIOR |= (1<<ADTS1);
+            break;
+        case(TIMER1_TOV)://110
+            SFIOR |= (1<<ADTS1);
+            SFIOR |= (1<<ADTS2);
+            break;
+        case(TIMER1_COMB)://101
+            SFIOR |= (1<<ADTS0);
+            SFIOR |= (1<<ADTS2);
+            break;
+    }
 }
