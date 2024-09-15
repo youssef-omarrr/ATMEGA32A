@@ -1,7 +1,6 @@
 #include <avr/io.h>
 #include "mUART.h"
 #include "DIO.h"
-#include <string.h>
 #include <util/delay.h>
 /**
  * 
@@ -92,12 +91,8 @@ void UART_send (char data){
 }
 
 void UART_sen_str (char* data){
-    for (int i=0; i < strlen(data); i++){
-        while (!(UCSRA & (1<<UDRE))); /*wait until USART Data Register is Empty to send data
-                                      we used while inside the function instead of 'if' to prevent data losses*/
-        //Put data into buffer, sends the data
-        UDR = data[i];  
-        _delay_us(100);
+    for (int i=0; data[i] != '\0'; i++){
+          UART_send (data [i]);
     }
 }
 
@@ -108,11 +103,6 @@ char UART_receive(){
     //RXC flag bit is set when there are unread data in the receive buffer and cleared when the receive buffer is empty
     //wait until all data has been received (RXC=0 until data is read (from TX) then it's 1)
     while (!(UCSRA & (1<<RXC))); 
-    
-    // Error checking for frame error, data overrun, and parity error
-    if (UCSRA & ( (1<<FE) | (1<<DOR) | (1<<UPE)) ) {
-        return -1;
-    }
     
     //once RXC = 1 (means new data available in the UART receive buffer.) return data in UDR
     return UDR;           
