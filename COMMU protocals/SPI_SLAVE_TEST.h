@@ -28,7 +28,11 @@
 
 void EE_SEND_DATA (char address, char data);
 void EE_SEND_DATA_STR (char address, char* data);
+void EE_SEND_DATA_ARR (char address, char* data, char size); //array you want to write from your code to EEPROM
 char EE_READ_DATA (char address);
+void EE_READ_DATA_ARR (char address, char* data, char size); //array you want to write to from EEPROM to code
+char check_error(char size);
+
 
 #endif	/* SPI_SLAVE_TEST_H */
 
