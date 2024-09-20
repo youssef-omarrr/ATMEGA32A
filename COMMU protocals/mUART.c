@@ -131,6 +131,7 @@ void UART_flush(){
     
     if (UCSRB & (1<<RXEN)) {  // Check if the receiver is enabled
         unsigned char dummy;
+        dummy++;
         //every unread data is stored in dummy
         while (UCSRA & (1<<RXC)) dummy = UDR;
     }
