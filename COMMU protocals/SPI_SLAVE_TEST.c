@@ -6,6 +6,8 @@
 #include "DIO.h"
 #include "mLCD4.h"
 
+//before any instruction you must set SS to low and after every instruction set it to HIGH
+
 void EE_SEND_DATA (char address, char data){
     /*steps to write data
      * 1) enable write
