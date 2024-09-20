@@ -93,6 +93,7 @@ void UART_send (char data){
 void UART_sen_str (char* data){
     for (int i=0; data[i] != '\0'; i++){
           UART_send (data [i]);
+          _delay_ms(50);
     }
 }
 
