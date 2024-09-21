@@ -74,17 +74,20 @@
 //to enable any function (TWINT must be cleared by writing one to it)
 #define ENABLE_FUNCTION     TWCR = (1<<TWINT)| (1<<TWEN)
 
+
 void initTWI(char my_address);
 
 //master (tx: transmitter)(rx:receiver)
 char TWI_MTX(char slave_add_write, char data);
 char TWI_MRX(char slave_add_read);
-void TWI_MTX_buf(char slave, char* pdata);
-char* TWI_MRX_buf(char slave);
+char TWI_MTX_buf(char slave_add_write, char* pdata, char size);//array we want to send from code to EEPROM
+char TWI_MRX_buf(char slave_add_read, char* pdata, char size);//array we want to send from EEPROM to code
 
 //receiver (tx: transmitter)(rx:receiver)
 char TWI_STX(char data);
 char TWI_SRX();
+char TWI_STX_buf(char* pdata, char size); //array we want to send from code to EEPROM
+char TWI_SRX_buf(char* pdata, char size); //array we want to send from EEPROM to code
 
 
 //other functions 
@@ -93,6 +96,12 @@ void TWI_INT_EN();
 char TWI_ADDRESS_WRITE(char address);
 char TWI_ADDRESS_READ(char address);
 
+
+//EEPROM
+#define EEPROM_ADDRESS_READ    0xA1 //1010 000 1
+#define EEPROM_ADDRESS_WRITE   0xA0 //1010 000 0
+char EEPROM_TWI_WRITE(char address, char data);
+char EEPROM_TWI_READ(char address);
 
 
 
