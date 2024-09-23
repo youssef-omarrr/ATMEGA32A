@@ -308,6 +308,44 @@ char EEPROM_TWI_READ(char address){
 ///////////////  2) I2C EXTERNALL EEPROM   ///////////////////////////////
 
 ///////////////  3) INTERNALL EEPROM   ///////////////////////////////
+/* To WRITE on internal EEPROM
+ * 1. Wait until EEWE becomes zero.
+ * 2. Wait until SPMEN in SPMCR becomes zero.
+ * 3. Write new EEPROM address to EEAR (optional).
+ * 4. Write new EEPROM data to EEDR (optional).
+ * 5. Write a logical ONE to the EEMWE bit while writing a ZERO to EEWE in EECR.
+ * 6. Within four clock cycles after setting EEMWE, write a logical one to EEWE.
+ */
 
+void EEPROM_INTERNAL_WRITE(short int address, char data){
+    if (address > 0x3FF)
+        return;
+    
+    WAIT_EEWE;
+    
+    EEAR = address;
+    EEAR = data;
+    
+    EECR = (EECR | 1<<EEMWE) & ~(1<<EEWE);
+    EECR |= 1<<EEWE;
+}
+char EEPROM_INTERNAL_READ(short int address){
+    if (address > 0x3FF)
+        return -1;
+    
+    WAIT_EEWE;
+    
+    EEAR = address;
+    EECR |= (1<<EERE);
+    
+    return EEDR;
+}
+void EEPROM_INTERNAL_INT_EN(){
+    //The EEPROM Ready interrupt generates a constant interrupt when EEWE is cleared.
+    EECR |= (1<<EERIE);
+}
+void EEPROM_INTERNAL_INT_DIS(){
+    EECR &= ~(1<<EERIE);
+}
 
 ///////////////  3) INTERNALL EEPROM   ///////////////////////////////

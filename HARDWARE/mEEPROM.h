@@ -56,6 +56,29 @@ char EEPROM_TWI_READ(char address);
 
 ///////////////  3) INTERNALL EEPROM   ///////////////////////////////
 
+/*The AVR ATmega32A contains 1024bytes of data EEPROM memory
+ 
+ * The EEPROM has an endurance of at least 100,000 write/erase
+    cycles.
+ */
+
+/*
+ REGISTERS:
+ * EEARH and EEARL ? EEPROM Address Register
+ * EEDR ? EEPROM Data Register
+ * EECR ? EEPROM Control Register
+ * Bit 3 ? EERIE: EEPROM Ready Interrupt Enable
+ * Bit 2 ? EEMWE: EEPROM Master Write Enable
+ * Bit 1 ? EEWE: EEPROM Write Enable
+ * Bit 0 ? EERE: EEPROM Read Enable
+ */
+
+#define WAIT_EEWE     while (EECR & (1<<EEWE)) //Wait until EEWE becomes zero.
+
+void EEPROM_INTERNAL_WRITE(short int address, char data);
+char EEPROM_INTERNAL_READ(short int address);
+void EEPROM_INTERNAL_INT_EN();
+void EEPROM_INTERNAL_INT_DIS();
 
 ///////////////  3) INTERNALL EEPROM   ///////////////////////////////
 
