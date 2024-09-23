@@ -110,14 +110,15 @@ void timer0_prescaler_reset(){
                TIMER_CTC         
                TIMER_FAST_PWM    
  * 
- * @param clk   CLK_NO           
-                CLK              
-                CLK_8            
-                CLK_64           
-                CLK_256          
-                CLK_1024         
-                CLK_EX_FALLING   
-                CLK_EX_RISING
+ * @param clk   //Clock Select Bit Description
+        #define CLK2_NO           0
+        #define CLK2              1
+        #define CLK2_8            2
+        #define CLK2_32           3
+        #define CLK2_64           4
+        #define CLK2_128          5
+        #define CLK2_256          6
+        #define CLK2_1024         7
  */
 void initTimer2(char wave, char clk) { //we should make sure that everything is init before we init the timer
 
@@ -135,7 +136,7 @@ void timer2_selectMode(char wave) {
 
         case(TIMER_NORMAL)://00
             //no change already zero
-            timer0_TOV_int_en(); //enable overflow toggle 
+            timer2_TOV_int_en(); //enable overflow toggle 
             break;
 
         case(TIMER_PWM)://01
@@ -143,9 +144,9 @@ void timer2_selectMode(char wave) {
             break;
 
         case(TIMER_CTC)://10
-            OCR0 = CTC_TOP;
+            OCR2 = CTC_TOP;
             TCCR2 |= (1 << WGM21);
-            timer0_COMP_int_en(); //enable compare output 
+            timer2_COMP_int_en(); //enable compare output 
             break;
 
         case(TIMER_FAST_PWM)://11
@@ -170,7 +171,7 @@ void timer2_COMP_int_en() {
 }
 
 void timer2_OC2_init(){ //in the main we should init this first before the timer
-    setPINB_dir(OC2, OUT); //make sure we set it to output first;
+    setPIND_dir(OC2, OUT); //make sure we set it to output first;
 }
 
 /**
@@ -432,7 +433,7 @@ void timer1_ICP_selectEdge(char edge){
     TCCR1B &= ~(1<<ICES1); //reset first
     TCCR1B |= edge<<ICES1;
 }
-char timer1_ICP_getValue(){
+short unsigned int timer1_ICP_getValue(){
     return ICR1;
 }
 void timer1_ACO_init(){

@@ -18,14 +18,14 @@
 #define TIMER_FAST_PWM    3 //0 to 255
 
 //Clock Select Bit Description
-#define CLK_NO           0
-#define CLK              1
-#define CLK_8            2
-#define CLK_64           3
-#define CLK_256          4
-#define CLK_1024         5
-#define CLK_EX_FALLING   6
-#define CLK_EX_RISING    7
+#define CLK01_NO           0
+#define CLK01              1
+#define CLK01_8            2
+#define CLK01_64           3
+#define CLK01_256          4
+#define CLK01_1024         5
+#define CLK01_EX_FALLING   6
+#define CLK01_EX_RISING    7
 
 #define CTC_TOP          100
 #define OC0              PB3 //is output and can be any value (triggered when a compare match occurs)
@@ -139,7 +139,7 @@ void timer1_ICP_noise_filter(); //to enable nosie canceler
 #define FALLING_EDGE    0
 #define RISING_EDGE     1
 void timer1_ICP_selectEdge(char edge); //to select edge select mode
-char timer1_ICP_getValue();
+short unsigned int timer1_ICP_getValue();
 
 #define AIN0    PB2
 #define AIN1    PB3
@@ -147,9 +147,39 @@ void timer1_ACO_init();
 
 
 //timer2
+
+
+//type of output in OC2 after compare or overflow (according to wave and compare types)
+//0 is disconnected for all
+#define OC2_DISCONNECTED          0
+//CTC
+#define OC2_CTC_TOGGLE            1 //Toggle OC2 on compare match
+#define OC2_CTC_CLEAR             2 //Clear OC2 on compare match
+#define OC2_CTC_SET               3 //Set OC2 on compare match
+
+//1 is reserved for both
+//PWM
+#define OC2_PWM_CLEAR_UP    2 //Clear OC2 on compare match when up-counting. Set OC2 on compare match when downcounting
+#define OC2_PWM_SET_UP      3 //Set OC2 on compare match when up-counting. Clear OC2 on compare match when downcounting.
+//fast PWM
+#define OC2_FPWM_CLEAR      2 //Clear OC2 on compare match, set OC2 at BOTTOM
+#define OC2_FPWM_SET        3 //Set OC2 on compare match, clear OC2 at BOTTOM
+
 #define OC2         PD7
 #define clk_io        0
 #define clk_osc       1    
+
+//Clock Select Bit Description
+#define CLK2_NO           0
+#define CLK2              1
+#define CLK2_8            2
+#define CLK2_32           3
+#define CLK2_64           4
+#define CLK2_128          5
+#define CLK2_256          6
+#define CLK2_1024         7
+         
+
 void initTimer2(char wave, char clk);
 void timer2_selectMode(char wave);
 void timer2_select_clock(char clk);
