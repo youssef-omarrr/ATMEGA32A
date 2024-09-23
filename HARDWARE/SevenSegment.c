@@ -1,6 +1,7 @@
 #include "SevenSegment.h"
 #include "DIO.h"
 #include <avr/io.h>
+#include <util/delay.h>
 
 
 void init_SS(){
@@ -32,4 +33,17 @@ void SS_write(char number){
     PORTA &= 0x0F; //0000 1111
     
     PORTA |= (number<<4);
+}
+
+void counter(){
+    for (int j=0; j<9; j++){
+        SS_init_EN1();
+        SS_write(j);
+        SS_init_EN2();
+        for (int i=1; i<10; i++){
+            SS_write(i);
+            _delay_ms(1000);
+        }
+        SS_write(0);
+    }
 }

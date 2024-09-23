@@ -24,5 +24,6 @@ void SS_init_EN1();
 void SS_init_EN2();
 void SS_init_BOTH();
 void SS_write(char number);
+void counter();
 #endif	/* SEVENSEGMENT_H */
 
