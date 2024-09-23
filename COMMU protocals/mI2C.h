@@ -97,13 +97,5 @@ char TWI_ADDRESS_WRITE(char address);
 char TWI_ADDRESS_READ(char address);
 
 
-//EEPROM
-#define EEPROM_ADDRESS_READ    0xA1 //1010 000 1
-#define EEPROM_ADDRESS_WRITE   0xA0 //1010 000 0
-char EEPROM_TWI_WRITE(char address, char data);
-char EEPROM_TWI_READ(char address);
-
-
-
 #endif	/* MI2C_H */
 
