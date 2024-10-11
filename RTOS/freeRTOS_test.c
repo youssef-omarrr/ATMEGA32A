@@ -10,7 +10,7 @@
 
 /* steps to start:
  * 1) create a handle: TaskHandle_t TaskHandler1 = NULL;
- * 2) create a task: xTaskCreate(TaskFunction, "TaskName", stackSize, parameter, priority, &TaskHandle);
+ * 2) create a task: xTaskCreate(TaskFunction, "TaskName", stackSize, (void*) &parameter, priority, &TaskHandle);
  *      you should have already created the function and/or the parameters you need in the task
  * 3) start scheduler: vTaskStartScheduler();
  * 
