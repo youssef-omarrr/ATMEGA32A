@@ -1,7 +1,40 @@
 #include <avr/io.h>
+#include <string.h>
 #include "mUART.h"
 #include "DIO.h"
 #include <util/delay.h>
+
+///////////////////////////////////////////////////////////////////////////////
+ static void reverse(char s[])
+ {
+     int i, j;
+     char c;
+
+     for (i = 0, j = strlen(s)-1; i<j; i++, j--) {
+         c = s[i];
+         s[i] = s[j];
+         s[j] = c;
+     }
+}
+/* itoa:  convert n to characters in s */
+ static void itoa(int n, char s[])
+ {
+     int i, sign;
+
+     if ((sign = n) < 0)  /* record sign */
+        n = -n;          /* make n positive */
+        i = 0;
+     do {       /* generate digits in reverse order */
+         s[i++] = n % 10 + '0';   /* get next digit */
+     } while ((n /= 10) > 0);     /* delete it */
+     if (sign < 0)
+         s[i++] = '-';
+     s[i] = '\0';
+     reverse(s);
+}
+///////////////////////////////////////////////////////////////////////////////
+
+
 /**
  * 
  * @param baud              UART_BAUD_9600
@@ -93,8 +126,15 @@ void UART_send (char data){
 void UART_sen_str (char* data){
     for (int i=0; data[i] != '\0'; i++){
           UART_send (data [i]);
-          _delay_ms(50);
+          _delay_ms(10);
+          //if it didn't work make the delay 50ms
     }
+}
+
+void UART_num(int num){ //same as 8 bits
+    char str[17];
+    itoa(num, str); //changes the number to a string and then sends it to the print string function
+    UART_sen_str(str);
 }
 
 char UART_receive(){

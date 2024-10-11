@@ -38,6 +38,7 @@
 void initUART(int baud, int data_mode, int clk_mode);
 void UART_send (char data);
 void UART_sen_str (char* data);
+void UART_num(int num);
 char UART_receive();
 void UART_receive_no_pooling();
 void UART_flush();
