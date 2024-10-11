@@ -42,6 +42,8 @@
 
 #define ADC_Flag        while (!(ADCSRA & (1<<ADIF))) //checks if flag is one and keeps looping until it is one (variable delay)
 #define ADCdata         ADCW    //ADCH and ADCL data registers
+#define ADC_STEP        4.887585532746823069403714565
+
 
 void initADC(char ch, char ref, char freq);
 void ADC_select_ch(char);
@@ -49,6 +51,7 @@ void ADC_select_ref(char);
 void ADC_select_freq(char);
 void ADC_startConv(); //start conversion
 void ADC_en(); //enable ADC
+int  ADC_read();
 
 void ADC_auto_triggering(char mode); //choose the auto trigger mode;
 void ADC_int_en();

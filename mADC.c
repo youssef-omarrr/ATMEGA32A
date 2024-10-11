@@ -92,3 +92,17 @@ void ADC_auto_triggering(char mode){
             break;
     }
 }
+
+int ADC_read() {
+    int data = 0;
+    if (ADMUX & (1 << ADLAR)) {
+        // If ADLAR is set (left adjusted)
+        data = (ADCH << 2); // Take the 8 most significant bits from ADCH
+        data |= (ADCL >> 6); // Take the 2 least significant bits from ADCL
+    } else {
+        // If ADLAR is clear (right adjusted)
+        data = ADCL; // Take the entire ADCL (low byte)
+        data |= (ADCH << 8); // Add the 2 bits from ADCH shifted to their correct positions
+    }
+    return data;
+}
