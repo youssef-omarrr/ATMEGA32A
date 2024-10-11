@@ -6,7 +6,6 @@
 #include "FreeRTOS/include/FreeRTOSConfig.h"
 #include "FreeRTOS/include/task.h"
 #include "FreeRTOS/include/queue.h"
-#include "mLCD.h"
 
 // all FreeRTOS settings can be managed from "FreeRTOSConfig.h" file
 
