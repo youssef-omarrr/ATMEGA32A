@@ -37,7 +37,8 @@ int main() {
     //handler to delete task (it acts as task pointer)
     //A task handle, used later to delete or control the task.
     TaskHandle_t TaskHandler1 = NULL;
-    
+
+     ///////////////// --------- tasks ----------///////////////////
     //create a TASK
     xTaskCreate(//task function
                 TaskFUNC1,
@@ -83,6 +84,7 @@ int main() {
     /*In FreeRTOS (and many other RTOSs), task functions always take a (void*) as their parameter for flexibility. 
      * This allows the same task function to receive ANY type of data when the task is created.
      */
+     ///////////////// --------- tasks ----------///////////////////
     
     
     TaskHandle_t TaskHandler3 = NULL;
@@ -103,6 +105,7 @@ int main() {
     return 0;
 }
 
+///////////////// --------- tasks functions ----------///////////////////
 void TaskFUNC1(void* para){
     while (1){
         LED_toggle(LED0);
