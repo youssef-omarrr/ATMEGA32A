@@ -127,7 +127,7 @@ void UART_sen_str (char* data){
     for (int i=0; data[i] != '\0'; i++){
           UART_send (data [i]);
           _delay_ms(10);
-          //if it didn't work make the delay 50ms
+          //if it doesn't work make the delay 50ms
     }
 }
 
