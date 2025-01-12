@@ -84,12 +84,12 @@ void initINT1(char Mode){
     //select mode
     INT1_selectmode(Mode);
     
-    //enable interrupt 0
+    //enable interrupt 1
     GICR |= (1<<INT1);
 }
 
 void disableINT1(){
-    //disables interrupt 0
+    //disables interrupt 1
     GICR &= ~(1<<INT1);
 }
 
@@ -100,7 +100,7 @@ void INT1_changemode(char Mode){
     //select mode
     INT1_selectmode(Mode);
     
-    //re-enable interrupt 0
+    //re-enable interrupt 1
     GICR |= (1<<INT1);
 }
 ///////////////////////////////////////////////////////////////////////////////
@@ -122,14 +122,14 @@ void INT2_selectmode(char Mode){
 
 void initINT2(char Mode){
     //select mode
-    INT1_selectmode(Mode);
+    INT2_selectmode(Mode);
     
-    //enable interrupt 0
+    //enable interrupt 2
     GICR |= (1<<INT2);
 }
 
 void disableINT2(){
-    //disables interrupt 0
+    //disables interrupt 2
     GICR &= ~(1<<INT2);
 }
 
@@ -140,7 +140,7 @@ void INT2_changemode(char Mode){
     //select mode
     INT2_selectmode(Mode);
     
-    //re-enable interrupt 0
+    //re-enable interrupt 2
     GICR |= (1<<INT2);
 }
 
